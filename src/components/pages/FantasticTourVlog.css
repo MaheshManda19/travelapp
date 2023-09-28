@@ -1,0 +1,158 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container
+{
+  background-image:
+  url(
+"https://media.geeksforgeeks.org/wp-content/uploads/rk.png");
+  background-size: "cover";
+}
+
+
+.head{
+display: flex;
+align-items: center;
+justify-content: center;}
+
+/* Apply a background color to the entire page */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+.text-box{
+  padding: 10rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin-left: 20px;
+}
+
+
+/* Adjust image size within the container */
+
+.header .navigation {
+  margin-right: 20px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Description section styles */
+.description {
+  padding: 20px;
+}
+
+.description .text-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main content styles */
+.main {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-between; /* Adjust as needed */
+  padding: 20px;
+}
+
+/* Add this CSS rule to display each tour in a row */
+.tour-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+select input{
+  padding: 10px;
+  border-radius: 5px;
+
+
+
+}
+/* Add this CSS to your FantasticTourVlog.css file */
+ .place-type-select {
+  height: 6vh;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.tour {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px; /* Add margin to separate each tour */
+  width: 31%;
+  height: 72vh;
+  /* Adjust as needed */
+  
+}
+
+
+
+.tour h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tour img {
+  padding: 30px;
+  height: 51vh;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.tour p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.search-bar input{
+ 
+
+  padding:10px;
+  border-radius: 5px;
+
+
+}
+.search-bar{
+  
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
