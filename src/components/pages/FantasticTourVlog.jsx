@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
-import Toursdata from '../../common/Toursdata';
-import './FantasticTourVlog.css';
-import Header from '../../common/Header';
+import React, { useState } from "react";
+import Toursdata from "../../common/Toursdata";
+import "./FantasticTourVlog.css";
+import TourDetail from "./TourDetail";
+import Header from "../../common/Header";
 
 function FantasticTourVlog() {
   const [tours] = useState(Toursdata);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedPlaceType, setSelectedPlaceType] = useState(''); 
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedPlaceType, setSelectedPlaceType] = useState("");
+  const [selectedTour, setSelectedTour] = useState(null);
 
+  const handleVisitNow = (tour) => {
+    setSelectedTour(tour);
+    };
+    const handleCloseTour = () => {
+      setSelectedTour(null);
+    };
   // Function to handle changes in the search input
   const handleSearchInputChange = (event) => {
     setSearchQuery(event.target.value);
@@ -25,7 +33,7 @@ function FantasticTourVlog() {
       tour.place.toLowerCase().includes(searchQuery.toLowerCase());
 
     const matchesPlaceType =
-      !selectedPlaceType || tour.type.includes(selectedPlaceType); 
+      !selectedPlaceType || tour.type.includes(selectedPlaceType);
 
     return matchesSearchQuery && matchesPlaceType;
   });
@@ -43,15 +51,15 @@ function FantasticTourVlog() {
           <div className="overlay">
             <div className="Description">
               <p className="text-box">
-                Welcome to Fantastic Tours Vlog! Discover amazing tours and adventures
-                that await you. Whether you're an adventure enthusiast or a culture
-                explorer, we have the perfect tours for you. Explore our featured
-                tours below.
+                Welcome to Fantastic Tours Vlog! Discover amazing tours and
+                adventures that await you. Whether you're an adventure
+                enthusiast or a culture explorer, we have the perfect tours for
+                you. Explore our featured tours below.
               </p>
             </div>
 
             <div className="search-bar">
-            <select
+              <select
                 className="place-type-select"
                 id="placeType"
                 value={selectedPlaceType}
@@ -69,22 +77,28 @@ function FantasticTourVlog() {
                 value={searchQuery}
                 onChange={handleSearchInputChange}
               />
-             
             </div>
           </div>
 
-          <section className="tour-list">
-            {filteredTours.map((tour) => (
-              <div key={tour.id} className="tour">
-                <h3>{tour.name}</h3>
-                <div className="image-container">
-                  <img src={tour.image} alt={tour.name} />
+          {selectedTour ? (
+            <TourDetail tour={selectedTour} onClose={handleCloseTour}/>
+          ) : (
+            <section className="tour-list">
+              {filteredTours.map((tour) => (
+                <div key={tour.id} className="tour">
+                  <h3>{tour.name}</h3>
+                  <div className="image-container">
+                    <img src={tour.image} alt={tour.name} />
+                  </div>
+                  <p>{tour.description}</p>
+                  <p>Address: {tour.place}</p>
+                  <button onClick={() => handleVisitNow(tour)}>
+                    Visit Now
+                  </button>
                 </div>
-                <p>{tour.description}</p>
-                <p>Address: {tour.place}</p>
-              </div>
-            ))}
-          </section>
+              ))}
+            </section>
+          )}
         </main>
       </div>
 

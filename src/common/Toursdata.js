@@ -9,17 +9,18 @@ import image6 from '../common/images/pexels-aysegul-alp-18384902.jpg'
       id: 1, 
       name: 'Mangroves',
       image:image1,
-      description: 'The place You definitely visit for inner peace',
+      description: 'Mangroves offer an exotic retreat for nature enthusiasts seeking a unique and off-the-beaten-path destination.',
       type: ['Forest'], 
-      place: 'Pichhavaram,Chidambaram,Tamilnadu,India'
+      place: 'Mangroves,Pichhavaram,Chidambaram,Tamilnadu,India'
     },
     {
       id: 2,
-      name: 'Nyle River',
+      name: 'Nile River',
       image:image3,
-      description: 'Description for Tour 3',
+      description: 'The Nile River, one of the worlds most famous and historically significant rivers, is a remarkable natural wonder that has played a pivotal role in the development of human civilization.',
       type: ['River'], 
-      place: 'Nyle river ,Africa' 
+      place: 'Lake Tana, Ethiopia,Egypt' 
+      
     },
     {
       id: 3,
@@ -35,24 +36,24 @@ import image6 from '../common/images/pexels-aysegul-alp-18384902.jpg'
       image:image4,
       description: 'Here is my suggestion, visit this place with your friends and family to get more joy',
       type: ['Hill Station'], 
-      place: 'Paris, France'
+      place: 'Eiffel Tower,Paris, France'
     },
     {
       id: 5,
-      name: 'Kerala',
+      name: 'Alleppey',
       image:image5,
-      description: 'Here is my suggestion, visit this place with your friends and family to get more joy',
+      description: 'The Western Ghats mountain range runs through the state, giving rise to rolling hills, tea and spice plantations, and dense rainforests. The abundant rainfall ensures that Kerala remains verdant throughout the year.',
       type: ['Hill Station'], 
-      place: 'Kerala,India'
+      place: 'alleppey,Kerala,India'
 
     },
     {
       id: 6,
-      name: 'Nayagara WaterFall',
+      name: 'Naiagara WaterFall',
       image:image6,
       description: 'Here is my suggestion, visit this place with your friends and family to get more joy',
       type: ['Hill Station'], 
-      place: 'NY,United states,Canada'
+      place: 'Naiagara Waterfall,United states,Canada'
 
     }
     
