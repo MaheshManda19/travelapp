@@ -8,7 +8,7 @@ function GoogleMap({ location }) {
 
   return (
     <div>
-      <iframe title="Google Map" id="iframeId" height="400px" width="100%"></iframe>
+      <iframe title="Google Map" id="iframeId" height="500px" width="100%"></iframe>
     </div>
   );
 }

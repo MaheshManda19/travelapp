@@ -23,7 +23,9 @@ function TourDetail({ tour, onClose }) {
           Back
         </button>
         <div className="Map">
-          <button onClick={toggleMap}>See the location Here!</button>
+          <button onClick={toggleMap}>
+            {showMap ? "Close Location" : "See the location Here!"}
+          </button>
           {showMap && <GoogleMap location={tour.place} />}
         </div>
       </div>

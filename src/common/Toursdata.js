@@ -4,7 +4,7 @@ import image3 from '../common/images/pexels-kelly-2519390.jpg';
 import image4 from '../common/images/pexels-alex-azabache-3879071.jpg';
 import image5 from '../common/images/pexels-renjith-tomy-pkm-10821527.jpg';
 import image6 from '../common/images/pexels-aysegul-alp-18384902.jpg'
- export const Toursdata = ([
+ const Toursdata = ([
     {
       id: 1, 
       name: 'Mangroves',
@@ -19,7 +19,7 @@ import image6 from '../common/images/pexels-aysegul-alp-18384902.jpg'
       image:image3,
       description: 'The Nile River, one of the worlds most famous and historically significant rivers, is a remarkable natural wonder that has played a pivotal role in the development of human civilization.',
       type: ['River'], 
-      place: 'Lake Tana, Ethiopia,Egypt' 
+      place: 'Nile river,Lake Tana, Ethiopia,Egypt' 
       
     },
     {
@@ -40,18 +40,18 @@ import image6 from '../common/images/pexels-aysegul-alp-18384902.jpg'
     },
     {
       id: 5,
-      name: 'Alleppey',
+      name: 'Munnar',
       image:image5,
       description: 'The Western Ghats mountain range runs through the state, giving rise to rolling hills, tea and spice plantations, and dense rainforests. The abundant rainfall ensures that Kerala remains verdant throughout the year.',
       type: ['Hill Station'], 
-      place: 'alleppey,Kerala,India'
+      place: 'Munnar Hill Station,Kerala,India'
 
     },
     {
       id: 6,
       name: 'Naiagara WaterFall',
       image:image6,
-      description: 'Here is my suggestion, visit this place with your friends and family to get more joy',
+      description: 'Niagara Falls is famed for its beauty and is a valuable source of hydroelectric power. Balancing recreational, commercial, and industrial uses has been a challenge for the stewards of the falls since the 19th century.',
       type: ['Hill Station'], 
       place: 'Naiagara Waterfall,United states,Canada'
 

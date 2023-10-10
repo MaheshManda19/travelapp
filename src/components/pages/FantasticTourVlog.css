@@ -147,7 +147,7 @@
   }
   .tour img {
   padding: 10px;
-  height: auto;
+  height: 60vh;
   border-radius: 4px;
   width: 100%;
   max-height: 300px; /* Limit the image height for responsiveness */
